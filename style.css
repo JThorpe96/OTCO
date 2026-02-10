@@ -73,6 +73,18 @@ h1 {
 h2 {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   margin-bottom: 2rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: clamp(1rem, 3.5vw, 1.5rem);
+  margin-bottom: 1.5rem;
+}
+
+h4 {
+  font-size: clamp(1rem, 3.5vw, 1.5rem);
+  margin-bottom: 1.5rem;
+  color: var(--warm-white);
 }
 
 p {
@@ -92,6 +104,35 @@ p {
   position: relative;
 }
 
+/* Services Image Cards */
+.services-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: var(--ivory);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 12px rgba(80, 97, 103, 0.08);
+  padding: 1.5rem;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.service-card:hover {
+  box-shadow: 0 4px 24px rgba(80, 97, 103, 0.16);
+}
+
+.service-img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  border-radius: var(--radius-small);
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(80, 97, 103, 0.08);
+}
+
 .hero::before {
   content: '';
   position: absolute;
@@ -106,6 +147,11 @@ p {
 .hero .container {
   position: relative;
   z-index: 1;
+}
+
+.about-section {
+  text-align: center;
+  color: var(white) !important;
 }
 
 .tagline {
@@ -205,7 +251,6 @@ blockquote::before {
 
 .contact h2 {
   color: white;
-  text-align: center;
   margin-bottom: 3rem;
 }
 
@@ -261,8 +306,7 @@ input::placeholder {
 }
 
 .hero .btn {
-  background: white;
-  color: var(--primary);
+  background: #506167;
   box-shadow: 0 4px 20px rgba(80, 97, 103, 0.2);
 }
 
@@ -335,9 +379,9 @@ input::placeholder {
     --section-padding: clamp(2.5rem, 6vw, 4rem);
   }
   
-  .container {
+  /* .container {
     padding: 0 1rem;
-  }
+  } */
   
   .hero {
     min-height: 60vh;
@@ -360,6 +404,10 @@ input::placeholder {
   form {
     gap: 1.25rem;
   }
+
+  .services-cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Large screens */
@@ -368,4 +416,21 @@ input::placeholder {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("img/E&J542.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  margin: 0;
+  max-width: none;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
