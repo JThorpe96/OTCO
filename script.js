@@ -19,7 +19,8 @@ async function sendLead(data) {
 
   return fetch(ENDPOINT, {
     method: "POST",
-    body: formBody
+    body: formBody,
+    mode: "no-cors"
   });
 }
 
