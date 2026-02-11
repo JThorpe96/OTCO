@@ -17,11 +17,15 @@ function saveOffline(data) {
 async function sendLead(data) {
   const formBody = new URLSearchParams(data);
 
-  return fetch(ENDPOINT, {
+  const response = await fetch(ENDPOINT, {
     method: "POST",
-    body: formBody,
-    mode: "no-cors"
+    body: formBody
   });
+
+  const text = await response.text();
+  console.log("Server response:", text);
+
+  return text;
 }
 
 
@@ -32,9 +36,9 @@ async function syncOfflineLeads() {
 
     for (const lead of stored) {
     try {
-    await sendLead(lead);
+        await sendLead(lead);
     } catch {
-    return; // still offline
+        return; // still offline
     }
     }
 
