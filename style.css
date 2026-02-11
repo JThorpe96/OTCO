@@ -81,7 +81,7 @@ h3 {
   margin-bottom: 1.5rem;
 }
 
-h4 {
+.large-text {
   font-size: clamp(1rem, 3.5vw, 1.5rem);
   margin-bottom: 1.5rem;
   color: var(--warm-white);
@@ -91,6 +91,7 @@ p {
   margin: 0 0 1.5rem 0;
   font-size: 1.1rem;
   line-height: 1.8;
+  text-align: center;
 }
 
 /* Hero Section */
@@ -149,9 +150,10 @@ p {
   z-index: 1;
 }
 
-.about-section {
+.section.about {
   text-align: center;
-  color: var(white) !important;
+  color: var(white);
+  background:none;
 }
 
 .tagline {
@@ -168,6 +170,7 @@ p {
 /* Sections */
 .section {
   padding: var(--section-padding) 0;
+  background: var(--warm-white);
 }
 
 .section.alt {
@@ -423,7 +426,7 @@ input::placeholder {
   background-image: url("img/E&J542.jpg");
 
   /* Set a specific height */
-  min-height: 500px;
+  min-height: 300px;
 
   margin: 0;
   max-width: none;
