@@ -15,11 +15,12 @@ function saveOffline(data) {
 
 
 async function sendLead(data) {
-    return fetch(ENDPOINT, {
-        method: "POST",
-        body: JSON.stringify(data),
-        mode: "cors"
-    });
+  const formBody = new URLSearchParams(data);
+
+  return fetch(ENDPOINT, {
+    method: "POST",
+    body: formBody
+  });
 }
 
 
