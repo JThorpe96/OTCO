@@ -438,6 +438,15 @@ input::placeholder {
   background-size: cover;
 }
 
+.parallax:before {
+  background-image: url("img/E&J528.jpg");
+  position:fixed;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+}
+
 
 /* The Modal (background) */
 .modal {
