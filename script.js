@@ -95,9 +95,6 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 // When the window loads, open the modal
-// window.onload = function() {
-//   modal.style.display = "block";
-// }
 document.addEventListener("DOMContentLoaded", function() {
   modal.style.display = "block";
 });
