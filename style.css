@@ -5,7 +5,7 @@
 
 :root{
   --bg:#f8f5ef; --surface:#efe9df; --ink:#2b2620; --accent:#a08e76;
-  --font-display:'Bodoni Moda', Georgia, serif;
+  --font-display:'Playfair Display', Georgia, serif;
   --font-body:'Jost', system-ui, sans-serif;
   --ink-soft:color-mix(in oklab, var(--ink) 64%, var(--bg));
   --line:color-mix(in oklab, var(--ink) 16%, var(--bg));
