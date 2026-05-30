@@ -1,170 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Of The Century Occasions</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Of The Century Occasions — Timeless Weddings, Perfectly Planned</title>
+<meta name="description" content="Calm, considered luxury wedding planning for couples who value elegance, intention and impeccable attention to detail.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Jost:wght@300;400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Allura&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Hero -->
-  <header class="hero">
-    <div class="container">
-      <h1>Of The Century Occasions</h1>
-      <p class="tagline">INTENTIONAL. PERSONAL. TIMELESS.</p>
-      <a href="#contact" class="btn">Begin Your Planning</a>
-    </div>
-  </header>
-
-  <!-- About -->
-  <section class="parallax">
-    <div class="container section dark">
-      <h2 style="color: white;">Timeless Weddings, Perfectly Planned</h2>
-      <p class="large-text">
-        Of The Century Occasions offers calm, considered wedding planning for couples
-        who value elegance, intention and impeccable attention to detail.
-      </p>
-    </div>
-  </section>
-
-  <!-- About Me -->
-  <section class="section about">
-    <div class="container">
-      <h2>About Me</h2>
-      <div class="about-content">
-        <div class="about-image">
-          <img src="img/about-me.jfif" alt="About Me" />
-        </div>
-        <div class="about-text">
-          <p>
-            Six years. Hundreds of weddings. Countless happy tears (mine included).
-          </p>
-        <p>
-          I’ve lived and breathed this industry from the inside of luxury venues, managing timelines, suppliers, 
-          logistics and all the beautiful chaos in between. I know what seamless execution really takes. 
-          I know the pressure behind the scenes. I know how to make a day run like clockwork.
-        </p>
-        <p>
-          But that’s not why couples choose me.
-        </p>
-        <p>
-          They choose me because I care deeply. Because I listen properly. 
-          Because I see the difference between a “nice wedding” and a wedding that feels completely, unapologetically you.
-          And behind the timelines, contracts, florals and finishing touches?
-          There’s a friendship.
-        </p>
-        <p>
-          I don’t just plan weddings. I become your calm voice when emotions run high, and your biggest cheerleader when something feels just right.
-          Because I genuinely love this. The details. The build-up. The tiny moments that make a wedding feel electric. I get excited with you. 
-          I’ll send the voice note back saying, “Stop it, I LOVE that idea.” I’ll care about your tablescape like it’s my own. 
-          I’ll tear up at your ceremony rehearsal and pretend it’s just allergies.
-        </p>
-        <p>
-          Because yes, the planning should be impeccable.
-          But the experience?
-          It should feel exciting. Effortless. And actually fun.
-        </p>
-        </div>
-      </div>
-    </div>  
-  </section>
-
-  <!-- Services -->
-  <section class="section alt">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="services-cards">
-        <div class="service-card">
-          <img src="img/E&J031.jpg" alt="Full Wedding Planning" class="service-img" />
-          <h3>Full Wedding Planning</h3>
-          <p>Comprehensive planning from start to finish, ensuring every detail is flawless.</p>
-        </div>
-        <div class="service-card">
-          <img src="img/E&J036.jpg" alt="Partial Planning" class="service-img" />
-          <h3>Partial Planning</h3>
-          <p>Support for couples who need expert guidance for select aspects of their wedding.</p>
-        </div>
-        <div class="service-card">
-          <img src="img/E&J452.jpg" alt="On-the-Day Coordination" class="service-img" />
-          <h3>On-the-Day Coordination</h3>
-          <p>Seamless management on your wedding day so you can relax and enjoy every moment.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Our Approach -->
-  <section class="section ">
-    <div class="container">
-      <h2>Our Approach</h2>
-      <p>
-        We don’t believe in templates or one-size-fits-all planning.
-      </p>
-      <p>
-        Every wedding we plan begins with understanding the couple; how they live,
-        what matters to them, and how they want their celebration to feel. From there,
-        each detail is carefully considered and expertly managed, creating a wedding
-        that feels effortless, personal, and refined.
-      </p>
-      <p>
-        Our role is to bring structure, clarity, and calm to the process, while delivering a
-        celebration that feels entirely your own.
-      </p>
-      <p>
-        Our on-the-day coordination begins well before the wedding itself. We refine the plans,
-        align the suppliers, and create a seamless structure for the day, ensuring everything
-        runs smoothly, quietly, and exactly as intended.
-      </p>
-    </div>  
-  </section>
-
-  <!-- Contact / Lead Capture -->
-  <section id="contact" class="section contact">
-    <div class="container">
-      <h2>Start Planning Your Wedding</h2>
-      <form id="leadForm">
-        <input type="text" name="company" tabindex="-1" autocomplete="off" class="honeypot"/>
-        <input name="name" placeholder="Full Name" required />
-        <input name="email" type="email" placeholder="Email Address" required />
-        <input name="phone" placeholder="Phone Number" />
-        <select name="service" id="service" required>
-          <option value="">Select a service</option>
-          <option value="Planning">Planning</option>
-          <option value="On the day coordination">On the day coordination</option>
-          <option value="Content creation">Content creation</option>
-        </select>
-        <p class="formmicrocopy">Wedding Date (optional):</p>
-        <input name="date" type="date" />
-        <input name="venue" placeholder="Venue (optional)" />
-        <button type="submit" class="btn">Submit</button>
-        <p id="status" class="status"></p>
-      </form>
-
-      <p class="microcopy">No pressure. No spam. Just beautifully planned weddings.</p>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <small>© Of The Century Occasions</small>
-  </footer>
-
-  <!-- Modal -->
-  <div id="myModal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>The National Wedding Show Exclusive</h2>
-      <p>
-        Enter your email to secure your chance to win a one-hour personalised wedding consultation,
-        and receive a bespoke inspiration guide curated just for you.
-      </p>
-      <a href="#contact" class="btn" id="modalbtn">Enter Now</a>
-    </div>
-
+<div class="ann-wrap" id="ann">
+  <div class="ann">
+    <span>The National Wedding Show</span>
+    <span class="sep">·</span>
+    <a href="#contact">Win a private consultation &amp; bespoke guide →</a>
+    <button aria-label="Dismiss" id="annClose">✕</button>
   </div>
+</div>
 
-  <script src="script.js"></script>
+<header class="hero" id="top">
+  <img src="img/E&J036.jpg" alt="An elegant orangery wedding reception">
+  <nav>
+    <a class="brand" href="#top">
+      <span class="b1">Of The Century</span>
+      <span class="b2">Occasions</span>
+    </a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#gallery">Gallery</a>
+    </div>
+    <a class="enquire" href="#contact">Enquire</a>
+  </nav>
+  <div class="hero-inner">
+    <div class="eyebrow">Intentional · Personal · Timeless</div>
+    <h1 class="display">Timeless weddings, <em>perfectly</em> planned.</h1>
+    <a class="cta" href="#contact">Begin your planning
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</header>
+
+<div class="canvas">
+  <!-- statement -->
+  <section class="statement wrap reveal">
+    <div class="row">
+      <p class="lede">Calm, considered planning for couples who value elegance,
+        intention and <em>impeccable</em> attention to detail.</p>
+      <div class="meta">
+        <p class="body">Six years inside luxury venues. Hundreds of weddings.
+          Countless happy tears. I know exactly what seamless execution takes —
+          and how to make a day run like clockwork while it feels entirely your own.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- about -->
+  <section class="block wrap" id="about">
+    <div class="about">
+      <div class="figure reveal">
+        <img src="img/about-me.jfif" alt="Portrait of the wedding planner">
+        <span class="cap">The Planner</span>
+      </div>
+      <div class="reveal">
+        <div class="num">01</div>
+        <div class="label" style="color:var(--accent);margin-bottom:18px">About me</div>
+        <h2>I don't just plan weddings. I become your <em>calm voice</em> and your biggest cheerleader.</h2>
+        <p class="body">They choose me because I care deeply. Because I listen properly.
+          Because I see the difference between a "nice wedding" and a wedding that
+          feels completely, unapologetically <em>you</em>.</p>
+        <p class="body">I'll send the voice note back saying "stop it, I love that idea."
+          I'll care about your tablescape like it's my own. I'll tear up at your ceremony
+          rehearsal and pretend it's just allergies. Because the planning should be
+          impeccable — but the experience should feel exciting, effortless and actually fun.</p>
+        <div class="sign"><small>With love,</small>Erin</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- services -->
+  <section class="block wrap" id="services">
+    <div class="services" style="padding:clamp(40px,5vw,72px) clamp(24px,4vw,56px)">
+      <div class="sec-head">
+        <span class="label">Services</span>
+        <span class="rule"></span>
+        <span class="num" style="font-size:clamp(34px,4vw,56px)">02</span>
+      </div>
+      <div class="svc-grid">
+        <article class="svc reveal">
+          <div class="ph"><img src="img/E&J031.jpg" alt="Full wedding planning"></div>
+          <div class="idx">i.</div>
+          <h3>Full Wedding Planning</h3>
+          <p>Comprehensive planning from first idea to final dance — every detail
+            considered, sourced and flawlessly managed.</p>
+        </article>
+        <article class="svc reveal">
+          <div class="ph"><img src="img/E&J452.jpg" alt="Partial planning"></div>
+          <div class="idx">ii.</div>
+          <h3>Partial Planning</h3>
+          <p>Expert guidance for the select aspects you'd love a steady, experienced
+            hand on — picking up exactly where you need.</p>
+        </article>
+        <article class="svc reveal">
+          <div class="ph"><img src="img/E&J036.jpg" alt="On-the-day coordination"></div>
+          <div class="idx">iii.</div>
+          <h3>On-the-Day Coordination</h3>
+          <p>Seamless management of your wedding day so you can be fully present —
+            and simply enjoy every single moment.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- approach -->
+  <section class="block wrap" id="approach">
+    <div class="approach">
+      <div class="text reveal">
+        <div class="num">03</div>
+        <div class="label" style="color:var(--accent);margin-bottom:18px">Our approach</div>
+        <h2>No templates. No one-size-fits-all. A wedding that feels <em>entirely yours</em>.</h2>
+        <p class="body">Every wedding begins with understanding the couple — how you live,
+          what matters to you, and how you want the day to feel. From there, each detail is
+          carefully considered and expertly managed.</p>
+        <div class="pts">
+          <div class="pt"><span class="k">i</span><p><strong style="color:var(--ink);font-weight:500">Understand</strong> — we begin with you, never a checklist.</p></div>
+          <div class="pt"><span class="k">ii</span><p><strong style="color:var(--ink);font-weight:500">Refine</strong> — we align suppliers and shape a seamless structure.</p></div>
+          <div class="pt"><span class="k">iii</span><p><strong style="color:var(--ink);font-weight:500">Deliver</strong> — quietly, smoothly, exactly as intended.</p></div>
+        </div>
+      </div>
+      <div class="art reveal">
+        <img src="img/E&J452.jpg" alt="Considered wedding details">
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery -->
+  <section class="block wrap gallery" id="gallery">
+    <div class="sec-head">
+      <span class="label">A glimpse</span>
+      <span class="rule"></span>
+      <span class="label" style="color:var(--ink-soft)">Selected celebrations</span>
+    </div>
+    <div class="gx">
+      <img class="g1" src="img/E&J031.jpg" alt="Wedding celebration">
+      <img class="g2" src="img/E&J036.jpg" alt="Wedding celebration">
+      <img class="g3" src="img/E&J452.jpg" alt="Wedding celebration">
+      <img class="g4" src="img/E&J528.jpg" alt="Wedding celebration">
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section class="block wrap" id="contact">
+    <div class="contact">
+      <div class="inner">
+        <div class="reveal">
+          <div class="num">04</div>
+          <div class="eyebrow" style="margin:10px 0 0">Begin your planning</div>
+          <h2>Let's start with <em>hello</em>.</h2>
+          <p class="note">No pressure. No spam. Just beautifully planned weddings —
+            and a friendship along the way.</p>
+        </div>
+        <form class="form reveal" id="leadForm">
+          <input type="text" name="company" tabindex="-1" autocomplete="off" class="honeypot" aria-hidden="true">
+          <div class="field">
+            <label>Your name</label>
+            <input type="text" name="name" placeholder="Full name" required>
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="you@email.com" required>
+          </div>
+          <div class="field">
+            <label>Phone (optional)</label>
+            <input type="text" name="phone" placeholder="Phone number">
+          </div>
+          <div class="field">
+            <label>Service</label>
+            <select name="service" required>
+              <option value="Full Wedding Planning">Full Wedding Planning</option>
+              <option value="Partial Planning">Partial Planning</option>
+              <option value="On-the-Day Coordination">On-the-Day Coordination</option>
+              <option value="Content Creation">Content Creation</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Wedding date (optional)</label>
+            <input type="text" name="date" placeholder="Month / Year">
+          </div>
+          <div class="field">
+            <label>Venue (optional)</label>
+            <input type="text" name="venue" placeholder="Venue">
+          </div>
+          <button type="submit">Send enquiry</button>
+          <div class="ok" id="status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <img class="mark" src="assets/otco-logo-dark.png" alt="Of The Century Occasions">
+  <span class="eyebrow">Intentional · Personal · Timeless</span>
+  <div class="fnav">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#approach">Approach</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Enquire</a>
+  </div>
+  <div class="copy">© Of The Century Occasions</div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
